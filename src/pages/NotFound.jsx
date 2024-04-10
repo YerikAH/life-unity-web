@@ -6,7 +6,7 @@ import logo from '../assets/logo.png'
 export function NotFound() {
   const { changeTitle } = useTitle()
   useEffect(() => {
-    changeTitle('Home - LifeUnity')
+    changeTitle('Not found - LifeUnity')
   }, [changeTitle])
   return (
     <>
