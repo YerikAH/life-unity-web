@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-const CustomLink = ({ text, route }) => {
+export const CustomLink = ({ text, route }) => {
   return (
     <li className="py-2">
       <Link
@@ -11,4 +11,3 @@ const CustomLink = ({ text, route }) => {
     </li>
   );
 };
-export default CustomLink;

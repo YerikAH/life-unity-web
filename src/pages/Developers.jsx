@@ -1,6 +1,6 @@
 import { ListDevelopers, Navigation } from "../components"
 
-function Developers() {
+export function Developers() {
   return (
     <>
       <Navigation />
@@ -10,5 +10,3 @@ function Developers() {
     </>
   )
 }
-
-export default Developers

@@ -1,4 +1,4 @@
-import { CardDevelopers } from "../CardDevelopers/CardDevelopers"
+import { CardDevelopers } from "./CardDevelopers"
 
 const people = [
 

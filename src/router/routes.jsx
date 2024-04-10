@@ -1,6 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../pages/Home";
-import Developers from "../pages/Developers";
+import { Home, Developers, NotFound } from "../pages";
 
 const routes = [
   {
@@ -10,6 +9,10 @@ const routes = [
   {
     path: "/developers",
     element: <Developers />,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ];
 export default createBrowserRouter(routes);
