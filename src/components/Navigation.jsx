@@ -3,7 +3,6 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Popover, Transition } from '@headlessui/react'
 import {
-  ArrowPathIcon,
   Bars3Icon,
   ChartPieIcon,
   CursorArrowRaysIcon,
@@ -11,30 +10,15 @@ import {
   SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon, } from '@heroicons/react/20/solid'
 import logo from '../assets/logo.png'
-import { Banner } from './Banner'
+import { Link } from 'react-router-dom'
 
 const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-]
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
-const company = [
-  { name: 'About us', href: '#', description: 'Learn more about our company values and mission to empower others' },
-  { name: 'Careers', href: '#', description: 'Looking for you next career opportunity? See all of our open positions' },
-  {
-    name: 'Support',
-    href: '#',
-    description: 'Get in touch with our dedicated support team or reach out on our community forums',
-  },
-  { name: 'Blog', href: '#', description: 'Read our latest announcements and get perspectives from our team' },
+  { name: 'Habits', description: 'Get a better understanding of your traffic', href: '/', icon: ChartPieIcon },
+  { name: 'Tasks', description: 'Speak directly to your customers', href: '/', icon: CursorArrowRaysIcon },
+  { name: 'Nutrition', description: 'Your customers’ data will be safe and secure', href: '/', icon: FingerPrintIcon },
+  { name: 'Integrations', description: 'Connect with third-party tools', href: '/', icon: SquaresPlusIcon },
 ]
 
 export const Navigation = () => {
@@ -42,8 +26,8 @@ export const Navigation = () => {
 
   return (
     <header className="bg-transparent relative z-40">
-      <Banner />
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 relative z-30" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">LifeUnity</span>
@@ -63,7 +47,7 @@ export const Navigation = () => {
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Product
+              Solutions
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
 
@@ -87,66 +71,28 @@ export const Navigation = () => {
                         <item.icon className="h-6 w-6 text-gray-600 group-hover:text-yellow-600" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
-                        <a href={item.href} className="block font-semibold text-gray-900">
+                        <Link to={item.href} className="block font-semibold text-gray-900">
                           {item.name}
                           <span className="absolute inset-0" />
-                        </a>
+                        </Link>
                         <p className="mt-1 text-gray-600">{item.description}</p>
                       </div>
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                  {callsToAction.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
-                    >
-                      <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
               </Popover.Panel>
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Features
+          <Link to="/developers" className="text-sm font-semibold leading-6 text-gray-900">
+            Developers
+          </Link>
+          <a href="https://github.com/YerikAH/life-unity-app" className="text-sm font-semibold leading-6 text-gray-900" target="_blank">
+            Contribute
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Marketplace
+          <a href="https://www.paypal.com/pe/home" className="text-sm font-semibold leading-6 text-gray-900" target='_blank'>
+            Donate
           </a>
-
-          <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Company
-              <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-            </Popover.Button>
-
-            <Transition
-              as={Fragment}
-              enter="transition ease-out duration-200"
-              enterFrom="opacity-0 translate-y-1"
-              enterTo="opacity-100 translate-y-0"
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1"
-            >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-96 rounded-3xl bg-white p-4 shadow-lg ring-1 ring-gray-900/5">
-                {company.map((item) => (
-                  <div key={item.name} className="relative rounded-lg p-4 hover:bg-gray-50">
-                    <a href={item.href} className="block text-sm font-semibold leading-6 text-gray-900">
-                      {item.name}
-                      <span className="absolute inset-0" />
-                    </a>
-                    <p className="mt-1 text-sm leading-6 text-gray-600">{item.description}</p>
-                  </div>
-                ))}
-              </Popover.Panel>
-            </Transition>
-          </Popover>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
@@ -155,18 +101,18 @@ export const Navigation = () => {
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-        <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 flex w-full flex-col justify-between overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div className="fixed inset-0" />
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 flex w-full flex-col justify-between overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="p-6">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
+              <Link to="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">LifeUnity</span>
                 <img
                   className="h-16 w-auto"
                   src={logo}
                   alt="LifeUnity"
                 />
-              </a>
+              </Link>
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -194,27 +140,21 @@ export const Navigation = () => {
                 </div>
                 <div className="space-y-2 py-6">
                   <a
-                    href="#"
+                    href="https://github.com/YerikAH/life-unity-app"
+                    target='_blank'
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Features
+                    Contribute
                   </a>
                   <a
-                    href="#"
+                    href="https://www.paypal.com/pe/home"
+                    target='_blank'
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Marketplace
+                    Donate
                   </a>
 
-                  {company.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >
-                      {item.name}
-                    </a>
-                  ))}
+
                 </div>
                 <div className="py-6">
                   <a
@@ -226,17 +166,6 @@ export const Navigation = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="sticky bottom-0 grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50 text-center">
-            {callsToAction.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-100"
-              >
-                {item.name}
-              </a>
-            ))}
           </div>
         </Dialog.Panel>
       </Dialog>

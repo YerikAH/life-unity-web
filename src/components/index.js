@@ -1,13 +1,13 @@
+export { Product } from "./Product";
+export { About } from "./About";
 export { Promotion } from "./Promotion";
 export { Banner } from "./Banner";
 export { Contact } from "./Contact";
 export { Features } from "./Features";
-export { CustomLink } from "./CustomLink";
 export { Stats } from "./Stats";
 export { Testimonials } from "./Testimonials";
 export { Footer } from "./Footer";
 export { HeroSection } from "./HeroSection";
 export { ListDevelopers } from "./ListDevelopers";
-export { CardDevelopers } from "./CardDevelopers";
 export { Faq } from "./Faq";
 export { Navigation } from "./Navigation";

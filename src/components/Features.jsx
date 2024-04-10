@@ -2,27 +2,27 @@ import { ChatBubbleOvalLeftEllipsisIcon, HeartIcon, PencilSquareIcon, TrashIcon 
 
 const features = [
   {
-    name: 'Spam report',
+    name: 'Habits',
     description:
-      'Autem reprehenderit aut debitis ut. Officiis harum omnis placeat blanditiis delectus sint vel et voluptatum. Labore asperiores non corporis molestiae.',
+      'With LifeUnity, easily establish and follow healthy habits, from your daily routine to your nightly habits.',
     icon: TrashIcon,
   },
   {
-    name: 'Compose in markdown',
+    name: 'Task list',
     description:
-      'Illum et aut inventore. Ut et dignissimos quasi. Omnis saepe dolorum. Hic autem fugiat. Voluptatem officiis necessitatibus est.',
+      "Organize your daily activities efficiently with LifeUnity, prioritizing tasks, setting reminders and maintaining control of your projects.",
     icon: PencilSquareIcon,
   },
   {
-    name: 'Email commenting',
+    name: 'Collaborative to-do list',
     description:
-      'Commodi quam quo. In quasi mollitia optio voluptate et est reiciendis. Ut et sunt id officiis vitae perspiciatis. Et accusantium sapiente.',
+      "Collaborate in real time with your team using LifeUnity's collaborative task list, assigning tasks, setting deadlines, and tracking progress together.",
     icon: ChatBubbleOvalLeftEllipsisIcon,
   },
   {
-    name: 'Customer connections',
+    name: 'Nutrition',
     description:
-      'Deserunt corrupti praesentium quo vel cupiditate est occaecati ad. Aperiam libero modi similique iure praesentium facilis quo cumque quibusdam.',
+      'Improve your diet with LifeUnity, planning and tracking your daily food intake, setting nutritional goals.',
     icon: HeartIcon,
   },
 ]
@@ -33,7 +33,7 @@ export const Features = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Stay on top of customer support
+            Efficient Task Organization with LifeUnity
           </h2>
           <dl className="col-span-2 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2">
             {features.map((feature) => (

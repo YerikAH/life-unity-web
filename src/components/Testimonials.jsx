@@ -1,120 +1,115 @@
 import { classNames } from "../helpers"
 
 const featuredTestimonial = {
-  body: 'Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.',
+  body: "This application was born from the need to have a comprehensive solution for creating positive habits, eliminating the frustration of depending on multiple applications for different areas of life.With LifeUnity, you can focus on improving your productivity and well- being in all aspects: occupational, physical, artistic, emotional and more.",
   author: {
-    name: 'Brenna Goyette',
-    handle: 'brennagoyette',
+    name: 'Harvey Vasquez',
+    handle: 'harvey',
     imageUrl:
-      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80',
-    logoUrl: 'https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg',
+      'https://avatars.githubusercontent.com/u/97197014?v=4',
   },
 }
 const testimonials = [
   [
     [
       {
-        body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+        body: 'Incredibly helpful in keeping me on the path to a healthier life!',
         author: {
-          name: 'Leslie Alexander',
-          handle: 'lesliealexander',
+          name: "Luis Ángel",
+          handle: 'anglesluis',
           imageUrl:
             'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
       },
       {
-        body: 'Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.',
+        body: "I love how it motivates me to follow my daily habits. Highly recommended!",
         author: {
-          name: 'Lindsay Walton',
-          handle: 'lindsaywalton',
+          name: 'Juan Carlos',
+          handle: 'carlosss',
           imageUrl:
             'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
       },
       {
-        body: 'Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.',
+        body: "The best tool to organize my tasks and improve my well-being",
         author: {
-          name: 'Lindsay Walton',
-          handle: 'lindsaywalton',
+          name: 'Pedro Pablo',
+          handle: 'pabloro',
           imageUrl:
             'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
       },
-      // More testimonials...
     ],
     [
       {
-        body: 'Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.',
+        body: "I can't live without this app! It has transformed my daily routine.",
         author: {
-          name: 'Lindsay Walton',
-          handle: 'lindsaywalton',
+          name: 'José Luis',
+          handle: 'lucoooo',
           imageUrl:
             'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
       },
       {
-        body: 'Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.',
+        body: "Simple to use and effective for tracking my nutrition progress.",
         author: {
-          name: 'Lindsay Walton',
-          handle: 'lindsaywalton',
+          name: 'Carlos Andrés ',
+          handle: 'andreslos',
           imageUrl:
             'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
       },
-      // More testimonials...
     ],
   ],
   [
     [
       {
-        body: 'Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.',
+        body: "¡Amazing! It has helped me establish healthy habits for life.",
         author: {
-          name: 'Tom Cook',
-          handle: 'tomcook',
+          name: 'Mario Alberto',
+          handle: 'alfred',
           imageUrl:
             'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
       },
       {
-        body: 'Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.',
+        body: "I love how it reminds me of my tasks and helps me stay focused.",
         author: {
-          name: 'Lindsay Walton',
-          handle: 'lindsaywalton',
+          name: 'Pablo Emilio',
+          handle: 'lololo',
           imageUrl:
             'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
       },
-      // More testimonials...
     ],
     [
       {
-        body: 'Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.',
+        body: "A gem! It has helped me achieve goals I never thought possible.",
         author: {
-          name: 'Leonard Krasner',
-          handle: 'leonardkrasner',
+          name: 'Diego Alejandro',
+          handle: 'ale',
           imageUrl:
             'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
       },
       {
-        body: 'Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.',
+        body: "I love how it motivates me to follow my daily habits. Highly recommended!",
         author: {
-          name: 'Lindsay Walton',
-          handle: 'lindsaywalton',
+          name: 'Maria Bella',
+          handle: 'bela',
           imageUrl:
             'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
       },
       {
-        body: 'Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.',
+        body: "LifeUnity is an amazing app",
         author: {
-          name: 'Lindsay Walton',
-          handle: 'lindsaywalton',
+          name: 'Javier Antonio',
+          handle: 'anotoio',
           imageUrl:
             'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
       },
-      // More testimonials...
     ],
   ],
 ]
@@ -151,7 +146,7 @@ export const Testimonials = () => {
         <div className="mx-auto max-w-xl text-center">
           <h2 className="text-lg font-semibold leading-8 tracking-tight text-yellow-600">Testimonials</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            We have worked with thousands of amazing people
+            What they say about us LifeUnity
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
@@ -169,7 +164,7 @@ export const Testimonials = () => {
                 <div className="font-semibold">{featuredTestimonial.author.name}</div>
                 <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
               </div>
-              <img className="h-10 w-auto flex-none" src={featuredTestimonial.author.logoUrl} alt="" />
+
             </figcaption>
           </figure>
           {testimonials.map((columnGroup, columnGroupIdx) => (

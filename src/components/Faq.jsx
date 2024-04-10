@@ -2,41 +2,40 @@
 const faqs = [
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: "Is LifeUnity really free?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Yes, LifeUnity is completely free for all users.",
   },
   {
     id: 2,
-    question: "What's the best thing about Switzerland?",
+    question: "What makes LifeUnity different from other productivity apps?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "LifeUnity offers a comprehensive solution to improve productivity, manage habits, and achieve balance in daily life.",
   },
   {
     id: 3,
-    question: "What's the best thing about Switzerland?",
+    question: "Does LifeUnity show ads?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "No, LifeUnity does not display ads on its platform.",
   },
   {
     id: 4,
-    question: "What's the best thing about Switzerland?",
+    question: "How can LifeUnity help me develop good habits?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "LifeUnity provides tools and tracking to help you establish and maintain healthy habits.",
   },
   {
     id: 5,
-    question: "What's the best thing about Switzerland?",
+    question: "Is LifeUnity an open source application?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Yes, LifeUnity is an open source application, which means its source code is available for the community to contribute and improve.",
   },
   {
     id: 6,
-    question: "What's the best thing about Switzerland?",
+    question: "What was the goal when creating LifeUnity?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "LifeUnity was created with the goal of providing a unique and free tool to improve productivity and well-being in daily life.",
   },
-  // More questions...
 ]
 
 export const Faq = () => {
@@ -47,7 +46,7 @@ export const Faq = () => {
           <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
           <p className="mt-6 text-base leading-7 text-gray-600">
             Have a different question and can’t find the answer you’re looking for? Reach out to our support team by{' '}
-            <a href="#" className="font-semibold text-yellow-600 hover:text-yellow-500">
+            <a href="portfolio-harvey.netlify.com" className="font-semibold text-yellow-600 hover:text-yellow-500">
               sending us an email
             </a>{' '}
             and we’ll get back to you as soon as we can.
