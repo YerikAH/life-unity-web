@@ -1,3 +1,4 @@
+export { ButtonScrollTop } from "./ButtonScrollTop";
 export { Product } from "./Product";
 export { About } from "./About";
 export { Promotion } from "./Promotion";

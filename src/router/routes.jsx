@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Home, Developers, NotFound } from "../pages";
+import { Developers, Home, NotFound, Privacity, Terms } from "../pages";
 
 const routes = [
   {
@@ -9,6 +9,14 @@ const routes = [
   {
     path: "/developers",
     element: <Developers />,
+  },
+  {
+    path: "/terms",
+    element: <Terms />,
+  },
+  {
+    path: "/privacity",
+    element: <Privacity />,
   },
   {
     path: "*",

@@ -1,14 +1,23 @@
-import { useEffect } from "react"
-import { About, Contact, Footer, ListDevelopers, Navigation, Promotion } from "../components"
-import { useTitle } from "../hooks"
+import { useEffect } from "react";
+import {
+  About,
+  Banner,
+  Contact,
+  Footer,
+  ListDevelopers,
+  Navigation,
+  Promotion,
+} from "../components";
+import { useTitle } from "../hooks";
 
 export function Developers() {
-  const { changeTitle } = useTitle()
+  const { changeTitle } = useTitle();
   useEffect(() => {
-    changeTitle('Developers - LifeUnity')
-  }, [changeTitle])
+    changeTitle("Developers - LifeUnity");
+  }, [changeTitle]);
   return (
     <>
+      <Banner />
       <Navigation />
       <main>
         <About />
@@ -18,5 +27,5 @@ export function Developers() {
       </main>
       <Footer />
     </>
-  )
+  );
 }
