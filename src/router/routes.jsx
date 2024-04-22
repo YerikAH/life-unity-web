@@ -1,22 +1,44 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Developers, Home, NotFound, Privacity, Terms } from "../pages";
+import { ROUTES } from ".";
+import {
+  Developers,
+  HabitPage,
+  Home,
+  NotFound,
+  NutritionPage,
+  Privacity,
+  Terms,
+  TodoPage,
+} from "../pages";
 
 const routes = [
   {
-    path: "/",
+    path: ROUTES.home,
     element: <Home />,
   },
   {
-    path: "/developers",
+    path: ROUTES.developers,
     element: <Developers />,
   },
   {
-    path: "/terms",
+    path: ROUTES.terms,
     element: <Terms />,
   },
   {
-    path: "/privacity",
+    path: ROUTES.privacity,
     element: <Privacity />,
+  },
+  {
+    path: ROUTES.habits,
+    element: <HabitPage />,
+  },
+  {
+    path: ROUTES.todo,
+    element: <TodoPage />,
+  },
+  {
+    path: ROUTES.nutrition,
+    element: <NutritionPage />,
   },
   {
     path: "*",

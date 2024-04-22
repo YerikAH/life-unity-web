@@ -1,3 +1,4 @@
+export { CustomHeader } from "./CustomHeader";
 export { ButtonScrollTop } from "./ButtonScrollTop";
 export { Product } from "./Product";
 export { About } from "./About";
