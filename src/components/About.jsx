@@ -6,7 +6,7 @@ export const About = () => {
           <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About LifeUnity</h2>
             <p className="mt-6 text-xl leading-8 text-gray-600">
-              We are committed to your success and well-being. Our team is made up of passionate professionals dedicated to creating an exceptional experience for you. From developers to designers, each member of our team brings their experience and creativity to make LifeUnity the best possible tool to improve your productivity and quality of life.
+              We a committed to your success and well-being. Our team is made up of passionate professionals dedicated to creating an exceptional experience for you. From developers to designers, each member of our team brings their experience and creativity to make LifeUnity the best possible tool to improve your productivity and quality of life.
             </p>
             <p className="mt-6 text-base leading-7 text-gray-600">
 
